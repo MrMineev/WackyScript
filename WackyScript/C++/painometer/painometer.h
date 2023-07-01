@@ -5,7 +5,7 @@
 const long double E =  2.71828182;
 const long double C = 17.7589852008;
 
-const int COMMENT_PAIN = 2;
+const long double COMMENT_PAIN = 0.001;
 
 long double rank_pain(long double pain) {
   long double res = 10 * powl(E, -(((long double)pain - C) * ((long double)pain - C)) / 16200);
@@ -19,7 +19,7 @@ long double painometer(std::string s) {
       painometer += 1;
     } else {
       if (c != '$' && c != '+' && c != '-' && c != '[' && c != ']' && c != '{' && c != '}' && c != '|' && c != '>' && c != '<' && c != '#' && c != ';' && c != '&') {
-        painometer += (COMMENT_PAIN / 100.0 * (long double)s.size());
+        painometer += ((long double)COMMENT_PAIN / 100.0 * (long double)s.size());
       }
     }
   }
