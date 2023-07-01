@@ -14,9 +14,10 @@ WackyScript is a minimalistic programming language. In WackyScript there is a li
 '{}' - this is a while loop which ends when there is only one cell
 
 ## Rules
-1. A pointer can never pointer can never be negative (indexing from 0)
-2. A pointer can never be greater than the amount of cells
-3. After a program executes there should be only one cell with the value 0
+1. A pointer can never pointer can never be negative (indexing from 0).
+2. A pointer can never be greater than the amount of cells.
+3. After a program executes there should be only one cell with the value 0.
+4. The program should be written in the reverse order.
 
 ## Painometer
 Painometer is a way of mesuring how "good" your program is. Let's imagine the painometer value of your program is X, than the chance that each individual command works is X. When i say a command didn't work i mean the command was skipped.

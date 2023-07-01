@@ -73,6 +73,7 @@ int main(int a, char* b[]) {
 
   if (file.is_open()) {
       s = std::string((std::istreambuf_iterator<char>(file)), (std::istreambuf_iterator<char>()));
+      reverse(s.begin(), s.end());
       chance_one = painometer(s);
       std::cout << "[PAINOMETER]: " << chance_one << std::endl;
 
